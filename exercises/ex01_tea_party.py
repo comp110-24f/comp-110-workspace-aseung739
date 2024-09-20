@@ -21,9 +21,8 @@ def tea_bags(people: int) -> int:
 
 def treats(people: int) -> int:
     """Determining the number of treats based on number of tea bags needed."""
-    tea_bags = people * 2
     # Unsure of correct formatting of assignment operator.
-    return int(tea_bags * 1.5)
+    return int(tea_bags(people=people) * 1.5)
 
 
 def cost(tea_count: int, treat_count: int) -> float:
@@ -35,4 +34,5 @@ def cost(tea_count: int, treat_count: int) -> float:
 
 if __name__ == "__main__":
     main_planner(guests=int(input("How many guests are attending your tea party? ")))
-    # If you place the conditional statement above, the program will call the main_planner first.
+    # If you place the conditional statement above,
+    # the program will call the main_planner first.
