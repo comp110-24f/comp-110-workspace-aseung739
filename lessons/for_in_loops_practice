@@ -1,0 +1,5 @@
+"Telling each pet they are a good boy!"
+
+pets: list[str] = ["Louie", "Bo", "Bear"]
+for elem in pets:
+    print("Good boy, " + elem + "!")
